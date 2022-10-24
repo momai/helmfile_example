@@ -1,0 +1,18 @@
+ingress:
+  hosts:
+    - host: 192.168.49.2
+      paths:
+        - path: /
+          backend:  
+            serviceName: adminer
+            servicePort: 8080
+#    - host: 192.168.49.2
+#      paths: 
+#        - path: /api/
+#          backend:
+#            serviceName: kanban-app
+#            servicePort: 8080
+#        - path: /
+#          backend:
+#            serviceName: kanban-ui
+#            servicePort: 80
